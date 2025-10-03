@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Undergraduation.com Admin Dashboard
 
-First, run the development server:
+## Overview
+This is a professional internal CRM dashboard for managing student interactions on undergraduation.com. Built with Next.js and React, it provides a centralized view of each student’s journey, engagement, communications, and application progress.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
+- **Frontend:** Next.js (React)
+- **Backend/Database:** Firebase (integration-ready, currently using mock data)
+- **Auth:** Firebase Auth (integration-ready)
+- **Email:** Customer.io (mocked)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
+- **Student Directory:**
+	- Table view of all students
+	- Filters/search by name, email, status
+	- Click to open individual student profile
+- **Student Profile:**
+	- Basic info (name, email, phone, grade, country)
+	- Interaction timeline (login, AI questions, documents)
+	- Communication log (emails, SMS)
+	- Internal notes (add/edit/delete)
+	- Application progress bar
+	- AI summary (mocked)
+- **Communication Tools:**
+	- Log communications manually
+	- Trigger follow-up email (mock)
+	- Schedule reminders/tasks
+- **Insights & Filters:**
+	- Quick filters (not contacted, high intent, needs essay help)
+	- Summary stats (active students, essay stage, etc.)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Setup Instructions
+1. Install dependencies:
+	 ```bash
+	 npm install
+	 ```
+2. Start the development server:
+	 ```bash
+	 npm run dev
+	 ```
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## File Structure
+- `src/app/dashboard/page.jsx` — Main dashboard page
+- `src/components/StudentDirectory.jsx` — Student table view
+- `src/components/StudentProfile.jsx` — Individual student profile
+- `src/components/CommunicationTools.jsx` — Communication actions
+- `src/components/InsightsBar.jsx` — Summary stats and quick filters
+- `src/app/globals.css` — Global styles
 
-## Learn More
+## Customization & Extensibility
+- Replace mock data with Firebase integration for real student data
+- Connect Customer.io for real email sending
+- Extend filters, notes, and timeline as needed
 
-To learn more about Next.js, take a look at the following resources:
+## Assessment Deliverables
+- Loom video of working app (locally hosted)
+- Link to GitHub repo with code
+- README file (this file)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+This project is for technical assessment purposes only.

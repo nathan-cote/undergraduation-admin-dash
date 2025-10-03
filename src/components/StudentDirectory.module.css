@@ -1,0 +1,75 @@
+
+.directoryContainer {
+  background: #f8fafc;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  padding: 32px;
+  margin: 32px auto;
+  max-width: 900px;
+}
+
+
+.title {
+  color: #2563eb;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: left;
+  letter-spacing: -0.5px;
+}
+
+.filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+
+.searchInput, .statusSelect {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  background: #fff;
+  color: #1e293b;
+}
+
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 1.05rem;
+  color: #1e293b;
+}
+
+/* Scope table cell styles to local class for Next.js CSS Modules */
+
+.table th, .table td {
+  padding: 14px 18px;
+  text-align: left;
+  color: #1e293b;
+}
+
+/* Scope table header styles to local class for Next.js CSS Modules */
+
+.table th {
+  background: #f1f5f9;
+  font-weight: 600;
+  color: #2563eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+.row {
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+
+.row:hover {
+  background: #e0e7ff;
+  color: #2563eb;
+}
